@@ -5,7 +5,7 @@ const Posts = () => {
   const posts = useLoaderData();
   return (
     <div>
-      <h2>Total Posts: </h2>
+      <h2>Total Posts: {posts.length}</h2>
 
       <div className="post-container">
         {posts.map((post) => (
